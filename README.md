@@ -15,7 +15,7 @@ This project is not started!
 [![Deploy to Repl.it](https://repl.it/badge/github/xHyroM/uploado)](https://repl.it/github/xHyroM/uploado)
 <br>
 Quick.db error?<br>
-<b>Fork <a href="https://repl.it/@xHyroM/uploado">this</a> project! [![FP](https://imgur.com/ASCKbYc.png)]</b>
+<b>Fork <a href="https://repl.it/@xHyroM/Uploado">this</a> project! [![FP](https://imgur.com/ASCKbYc.png)]</b>
 
 ### License
 You have to code "Made By Hyro" somewhere in the index.html or in that card 

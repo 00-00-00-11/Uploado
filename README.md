@@ -5,7 +5,7 @@
 ### Warning
 This project is not started!
 
-🍭 Open-Source uptime script! [Demo](https://uploado.hyrousek.tk/)<br>
+🍭 Open-Source uptime script! [Demo](https://img.hyrousek.tk/)<br>
 🍬 Database: SQLITE (quick.db)<br>
 🍫 Language: JavaScript, HTML (NodeJS)<br>
 🧁 Start cmd: node index.js<br>

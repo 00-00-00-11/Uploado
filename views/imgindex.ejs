@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./../assets/style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+
+        <% if (embed === "true") { %>
+          <meta property="al:android:url" content="<%= link %>" />
+          <meta property="al:android:app_name" content="Best Uploader!" />
+          <meta property="al:android:package" content="com.img.mobile" />
+          <meta property="al:ios:url" content="<%= link %>" />
+          <meta property="al:ios:app_name" content="Best Uploader!" />
+          <meta property="al:web:url" content="<%= link %>" />
+          <meta property="og:type" content="website" />
+          <meta property="og:description" content="Uploaded at <%= date %>" />
+          <meta property="og:image" content="<%= link %>" />
+          <meta name="theme-color" content="#A1C240">
+          <meta name="twitter:card" 
+          content="summary_large_image" />
+          <meta name="twitter:title" content="Best Uploader!" />
+          <meta name="twitter:description" content="Uploaded at <%= date %>" />
+          <meta name="twitter:image:src" content="<%= link %>" />
+          <meta name="twitter:image:height" content="630" />
+          <meta name="twitter:image:width" content="1200" />
+       <% } else { %>
+          <meta content="<%= link %>" property="og:image">
+          <meta name="theme-color" content="#A1C240">
+          <meta name="twitter:card" content="summary_large_image">
+       <% } %>
+    </head>
+    <body>
+        <center>
+            <div class="card">
+                <div class="rest">
+                    <h2>Uploaded by <%= user %></h2>
+                    <img class="img-fluid" src="<%= link %>">
+                    <h4>Name: <span style="color: gray"><%= name %></span></h4>
+                    <h4>Uploaded at: <span style="color: gray"><%= date %></span></h4>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

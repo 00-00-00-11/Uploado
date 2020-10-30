@@ -1,0 +1,114 @@
+<html lang="en"><head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    textarea {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 90%;
+        resize: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        outline: none;
+        height: max-content;
+        height: 235px;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    
+</style>
+    <meta charset="utf-8">
+    <meta name="copyrighted-site-verification" content="271c10770f16902c">
+    <meta name="keywords" content="dev,programmer,hyro,hyrousek,thedevelopers,the developers,HyroM,hyro je l">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://upload.hicoria.com/files/psZKwR6T.png" type="image/icon type">
+        
+    <meta property="og:site_name" content="✅ VERIFIED WEBSITE ✅">
+    <meta content="Free Image Uploader (ShareX)" property="og:description">
+    <meta content="https://upload.hicoria.com/files/psZKwR6T.png" property="og:image">
+    <link type="application/json+oembed" href="https://em.0x71.cc/d2rvby.json">
+    <meta name="theme-color" content="#A1C240">
+    <title>Free Img Uploader</title>
+
+    <link rel="stylesheet" href="https://hyrousek.tk/css/alert.css">
+    <link rel="stylesheet" href="https://hyrousek.tk/css/indexnew.css">
+  </head>
+  <body>
+
+  <div class="container">
+  <img src="https://upload.hicoria.com/files/rr1GNB9K.gif" alt="logo">
+  <h1>Uploado</h1>
+  All uploaded images will be encrypted<br>
+  <br>
+
+  <h3><b>Limits</b></h3>
+  <ul>
+    <li><span>Allowed PNG, JPG, JPEG, GIF, APNG, TIFF, MP4, MPEG, AVI, WEBM and more...</span></li>
+    <li><span>Maximum size for non-animated is <b>20MB</b></span></li>
+    <li><span>Maximum size for animated is <b>200MB</b> (Video uploads cannot be longer than 60 seconds.)</span></li>
+  </ul>
+  <br>
+
+  <h3><b>ShareX Config</b></h3>
+  <textarea readonly="">{
+    "Version": "1.0.0",
+    "DestinationType": "Uploado",
+    "RequestMethod": "POST",
+    "RequestURL": "<%= urltoupload %>/upload",
+    "FileFormName": "file",
+    "Headers": {
+      "secret": "7BgQGnZ5xpvAP44QeUYx4D2XnxMqUmKrxYEXreVeBJbwAfcC9zKhg7WrXAPj",
+      "embed": "true",
+      "user": "your user name"
+    },
+    "URL": "$json:url$"
+  }</textarea>
+  <br>
+
+  <form encType="multipart/form-data" class="" action="/upload" method="post">
+    <h3><b>Image Upload Button</b></h3>
+    <input name="foo" type="file" required/><br>
+    <input type="submit" name="" value="Upload Image">
+  </form>
+
+  <h3><b>Statistics</b></h3>
+  Images: <%= files %><br>Used Size: --<br><h3><b>Available Domains</b></h3>
+  <a href="https://img.hyrousek.tk">img.hyrousek.tk  (USING)</a><br>
+  <a href="https://very-loser.fun">very-loser.fun</a><br>
+  <a href="https://big-brain.fun">big-brain.fun</a><br>
+
+  <h3><b>Contact</b></h3>
+  By <a href="https://hyrousek.tk" target="_blank">Hyro</a><br>
+  ShareX download <a href="https://getsharex.com" target="_blank">here</a><br>
+  </div>
+  </body>
+</html>

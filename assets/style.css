@@ -1,0 +1,31 @@
+html, body {
+    color: white;
+    background: #212121;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+.card {
+    width: 200px;
+    min-width: 700px;
+    background: #212121;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+    animation: float 6s ease-in-out infinite;
+    overflow: hidden;
+}
+    
+#rest {  
+    padding: 30px 15px;
+    line-height: 30px;
+    color: #282b30;
+}
+
+.img-fluid {
+    max-width:100%;
+    height:auto
+}

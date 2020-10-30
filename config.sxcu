@@ -1,0 +1,13 @@
+{
+    "Version": "1.0.0",
+    "DestinationType": "Free Use ImageUploader",
+    "RequestMethod": "POST",
+    "RequestURL": "https://img.hyrousek.tk/upload",
+    "FileFormName": "file",
+    "Headers": {
+      "secret": "7BgQGnZ5xpvAP44QeUYx4D2XnxMqUmKrxYEXreVeBJbwAfcC9zKhg7WrXAPj",
+      "embed": "true",
+      "user": "your user name"
+    },
+    "URL": "$json:url$"
+  }

@@ -46,15 +46,17 @@ app.post("/upload", async(req, res) => {
     
             imgur.uploadFile("./files/"+date)
             .then(function(json) {
-                console.log(json.data.link);
                 var id = generateID()
                 if(!req.header("embed") || req.header("embed") === "false") embed = "false"
                 if(req.header("embed") === "true") embed = "true"
+                if(!req.header("user")) var user = "Anonym"
+                if(req.header("user")) var user = req.header("user")
                 db.set("up_" + id, {
                     rdate: date,
                     rname: req.files.file.name,
                     rlink: json.data.link,
-                    rembed: embed
+                    rembed: embed,
+                    ruser: user
                 })
                 console.log(db.get("up_" + id))
                 db.add("size", 1)
@@ -76,18 +78,14 @@ app.post("/upload", async(req, res) => {
 
         imgur.uploadFile("./files/"+date)
         .then(function(json) {
-            console.log(json.data.link);
             var id = generateID()
-            if(!req.header("embed") || req.header("embed") === "false") embed = "false"
-            if(req.header("embed") === "true") embed = "true"
-            if(!req.header("user")) var user = "Anonym"
-            if(req.header("user")) var user = req.header("user")
+
             db.set("up_" + id, {
                 rdate: date,
                 rname: req.files.foo.name,
                 rlink: json.data.link,
-                rembed: embed,
-                ruser: user
+                rembed: false,
+                ruser: "Anonym"
             })
             console.log(db.get("up_" + id))
             db.add("size", 1)

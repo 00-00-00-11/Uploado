@@ -58,7 +58,6 @@ app.post("/upload", async(req, res) => {
                     rembed: embed,
                     ruser: user
                 })
-                console.log(db.get("up_" + id))
                 db.add("size", 1)
                 res.status(200).json({url: process.env.url +"/"+ id})
                 fs.unlinkSync(__dirname + "/files/"+date)
@@ -87,7 +86,6 @@ app.post("/upload", async(req, res) => {
                 rembed: false,
                 ruser: "Anonym"
             })
-            console.log(db.get("up_" + id))
             db.add("size", 1)
             res.redirect("/" + id)
             fs.unlinkSync(__dirname + "/files/"+date)
@@ -113,13 +111,13 @@ app.get("/:id", async(req, res) => {
     var r = db.get("up_" + req.params.id)
 
     if(!r) return res.status(400).json({error: "Not valid ID"})
-
+    console.log(r)
     res.render("imgindex", {
         date: r.rdate,
         name: r.rname,
         link: r.rlink,
         embed: r.rembed,
-        user: r.user,
+        user: r.ruser,
         urltoupload: process.env.url
     })
 })

@@ -60,7 +60,7 @@ app.post("/upload", async(req, res) => {
                 })
                 console.log(db.get("up_" + id))
                 db.add("size", 1)
-                res.status(200).json({url: "https://img.hyrousek.tk/" + id})
+                res.status(200).json({url: process.env.url +"/"+ id})
                 fs.unlinkSync(__dirname + "/files/"+date)
             })
             .catch(function (err) {
